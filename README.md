@@ -31,7 +31,7 @@ The workflow outlined in the readme below will be utilized for every assignment/
 ### Step 4 - Copy your files from your original portfolio to your git portfolio
 - Copy the files, not move, though it wouldn't matter tremendously.
 
-### Step 4 - Commit your files to your repo (See below if you need a refresher)
+### Step 5 - Commit your files to your repo (See [here](https://github.com/Learning-Fuze/git-workflow/blob/master/README.md) if you need a refresher
 - Go to your terminal / git bash
 - Add your new files to git
     - git add .
