@@ -44,8 +44,35 @@ nav ul li a:hover {
 }
 
 .header {
-    padding: 20px;
+    padding: 30px 20px 30px 20px;
     background-color: blue;
+}
+/*----- Footer || all pages ---*/
+
+.footer {
+    background-color: #555585;
+    padding: 30px 10px 30px 10px;
+    margin: 0px -1px 10px 0px;
+}
+
+.footer img {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.fb {
+    float: left;
+}
+
+.git {
+    float: right;
+}
+
+.ln {
+    display: inline-block;
+    position: relative;
+    left: 42%;
 }
 /*---- Start of Home page ---*/
 
@@ -80,7 +107,26 @@ nav ul li a:hover {
     padding: 30px 0px 20px 0px;
     margin-right: 30px;
 }
+/*----^^End of Home page^^---*/
 /*------- Contact page -----*/
+
+fieldset {
+    width: 300px;
+}
+
+.left2 {
+    display: inline-block;
+}
+
+.right2 {
+    display: inline-block;
+}
+
+.right2 a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
 /*------ Skills page ------*/
 
 .roman {
@@ -89,14 +135,39 @@ nav ul li a:hover {
 }
 
 .main_info4 {
+    margin: -20px 0px -20px 0px;
     background-color: #7895B3;
+    padding: 5px 0px 0px 10px;
+}
+
+.info4 {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .img {
     width: 40%;
     height: 250px;
     display: block;
-    padding: 10px 10px 10px 10px;
+    margin: 5px auto;
+    padding: 5px 0px 30px 0px;
+}
+
+.resume a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+}
+
+.resume a:hover {
+    color: white;
+}
+
+.resume {
+    text-align: center;
 }
 /*----- About page -------*/
 
