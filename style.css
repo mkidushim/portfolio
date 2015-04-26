@@ -23,17 +23,36 @@ nav ul li a:hover {
     color: gray;
 }
 
+.logo {
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+}
+
+.logo img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
 .right {
     position: relative;
-    left: 11%;
-    text-align: left;
-    margin-right: 0px;
+    left: 11.5%;
+    text-align: right;
+    margin-left: -120px;
+}
+
+.right a {
+    padding-right: 20px;
 }
 
 .left {
     position: relative;
-    right: 11%;
-    text-align: right;
+    right: 11.5%;
+    text-align: center;
+}
+
+.left a {
+    padding-left: 30px;
 }
 
 .no_style {
@@ -50,15 +69,16 @@ nav ul li a:hover {
 /*----- Footer || all pages ---*/
 
 .footer {
-    background-color: #555585;
+    background-color: #9999B6;
     padding: 30px 10px 30px 10px;
     margin: 0px -1px 10px 0px;
 }
 
 .footer img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     display: inline-block;
+    border-radius: 15px;
 }
 
 .fb {
@@ -112,6 +132,8 @@ nav ul li a:hover {
 
 fieldset {
     width: 300px;
+    height: 300px;
+    margin: 0px 0px 100px 40px;
 }
 
 .left2 {
@@ -119,13 +141,26 @@ fieldset {
 }
 
 .right2 {
+    position: relative;
+    left: 20%;
+    margin-bottom: 100px;
+    text-align: center;
     display: inline-block;
 }
 
 .right2 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
     font-style: italic;
+}
+
+.right2 li {
+    list-style: none;
+}
+
+.border {
+    border: 1px solid;
+    padding: 5px;
 }
 /*------ Skills page ------*/
 
@@ -197,6 +232,5 @@ fieldset {
 #dog {
     height: 300px;
     width: 70%;
-    margin-left: 12%;
-    margin-top: 20px;
+    margin: 20px 0px 20px 12%;
 }
