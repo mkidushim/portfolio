@@ -137,12 +137,16 @@ nav ul li a:hover {
 
 fieldset {
     width: 300px;
-    height: 300px;
-    margin: 0px 0px 100px 40px;
+    height: 200px;
+    margin: 0px 0px 40% 40px;
 }
 
 .left2 {
     display: inline-block;
+}
+
+.left2 h1 {
+    text-align: center;
 }
 
 .right2 {
@@ -161,6 +165,13 @@ fieldset {
 
 .right2 li {
     list-style: none;
+}
+
+#btn2:hover {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    -webkit-transform: scale(1.25);
 }
 
 .border {
