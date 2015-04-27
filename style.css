@@ -29,9 +29,16 @@ nav ul li a:hover {
 }
 
 .logo img {
-    display: inline-block;
+    display: inherit;
     width: 60px;
     height: 60px;
+}
+
+.logo img:hover {
+    -webkit-transform: translate(0px, 0px) rotate(90deg) scale(1.5) skew(0, 0);
+    -moz-transform: translate(0px, 0px) rotate(90deg) scale(1.5) skew(0, 0);
+    -ms-transform: translate(0px, 0px) rotate(90deg) scale(1.5) skew(0, 0);
+    transform: translate(0px, 0px) rotate(30deg) scale(1.5) skew(0, 0);
 }
 
 .right {
@@ -119,9 +126,7 @@ nav ul li a:hover {
     background-color: #C3D8DE;
 }
 
-.info {}
-
-.info.name {
+.p_info {
     text-align: center;
     border-bottom: 2px solid white;
     padding: 30px 0px 20px 0px;
