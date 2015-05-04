@@ -228,7 +228,7 @@ fieldset {
 }
 
 .about-me {
-    display: inline-block;
+    display: block;
 }
 
 .left3 {
@@ -237,16 +237,29 @@ fieldset {
 }
 
 .lax_img {
+    position: relative;
+    left: 50%;
+}
+
+.lax_img img {
     display: inline-block;
-    margin-left: 5%;
+    width: 30%;
+    height: 200px;
 }
 
 .dog_img {
-    border-top: 2px solid;
+    position: relative;
+    bottom: 200px;
 }
 
-#dog {
+.row_imgs {
+    position: relative;
+    left: 70px;
+}
+
+.row_imgs img {
+    display: inline-block;
+    width: 45%;
     height: 300px;
-    width: 70%;
-    margin: 20px 0px 20px 12%;
+    margin: 10px auto;
 }
