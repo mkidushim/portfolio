@@ -111,18 +111,27 @@ nav ul li a:hover {
 }
 
 .screen_shots {
-    width: 500px;
-    height: 500px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.ul_ss {
+    height: 250px;
 }
 
 .no_style.img_info {
     display: inline-block;
+    width: 15%;
+}
+
+li .no_style.img_info {
+    display: inline;
 }
 
 .main_info {
     width: 99%;
-    padding: 0px 4px 5px 10px;
-    margin: -25px 0px 0px 0px;
+    padding: 25px 4px 5px 10px;
     background-color: #C3D8DE;
 }
 
@@ -186,7 +195,6 @@ fieldset {
 }
 
 .main_info4 {
-    margin: -20px 0px -20px 0px;
     background-color: #7895B3;
     padding: 5px 0px 0px 10px;
 }
@@ -229,6 +237,9 @@ fieldset {
 
 .about-me {
     display: block;
+    line-height: 1.5em;
+    font-size: 15px;
+    border-bottom: 5px dashed;
 }
 
 .left3 {
@@ -254,7 +265,7 @@ fieldset {
 
 .row_imgs {
     position: relative;
-    left: 70px;
+    padding-left: 120px;
 }
 
 .row_imgs img {
