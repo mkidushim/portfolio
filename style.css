@@ -111,13 +111,11 @@ nav ul li a:hover {
 }
 
 .screen_shots {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
+    display: none;
 }
 
 .ul_ss {
-    height: 250px;
+    height: 300px;
 }
 
 .no_style.img_info {
@@ -147,20 +145,26 @@ li .no_style.img_info {
 fieldset {
     width: 300px;
     height: 200px;
-    margin: 0px 0px 40% 40px;
+    position: relative;
+    bottom: 50px;
 }
 
 .left2 {
     display: inline-block;
 }
 
+.left2 img {
+    width: 70%;
+}
+
 .left2 h1 {
     text-align: center;
+    position: relative;
+    right: 60px;
 }
 
 .right2 {
     position: relative;
-    left: 20%;
     margin-bottom: 100px;
     text-align: center;
     display: inline-block;
@@ -181,6 +185,17 @@ fieldset {
     color: white;
     border-radius: 25px;
     -webkit-transform: scale(1.25);
+}
+
+#message {
+    width: 115px;
+    height: 40px;
+}
+
+.up_textarea {
+    position: relative;
+    bottom: 35px;
+    padding-right: 5px;
 }
 
 .border {
@@ -273,4 +288,22 @@ fieldset {
     width: 45%;
     height: 300px;
     margin: 10px auto;
+}
+
+.hidden {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    padding-bottom: 30px;
+}
+
+.title_hide {
+    display: none;
+}
+
+.new_title {
+    color: gray;
+    text-align: center;
+    width: 20px;
+    height: 15px;
 }

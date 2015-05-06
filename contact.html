@@ -3,10 +3,12 @@
 
 <head>
     <title>Contact</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="portfolio.js"></script>
 </head>
 
-<body>
+<body onload="email()">
     <div class="header">
         <nav>
             <ul class="left">
@@ -26,7 +28,7 @@
     <div class="main_info2">
         <div class="left2">
             <h1>Contact Info</h1>
-            <img src="https://lh4.googleusercontent.com/-L5CJFbgus_k/AAAAAAAAAAI/AAAAAAAAAAA/ve2gZyBkcxY/photo.jpg">
+            <img class="mike" src="images/mike.jpeg">
         </div>
         <div class="right2">
             <fieldset>
@@ -43,11 +45,17 @@
                     <label>Mobile:</label>
                     <input type="text" name="mobile" />
                 </p>
+                <p>
+                    <label class="up_textarea">Message:</label>
+                    <textarea id="message" placeholder="Write your message here..."></textarea>
+                </p>
                 <input id="btn2" type="submit" value="Submit" />
             </fieldset>
             <p class="border">If you wish to contact me click on any of the links below:</p>
             <ul class="border">
-                <li><a href="mailto:mkidushim@gmail.com"> E-mail: mkidushim@gmail.com</a></li>
+                <li>
+                    <p id="email"> </p>
+                </li>
                 <li><a href="https://github.com/mkidushim">Github: mkidushim</a></li>
             </ul>
         </div>
