@@ -3,7 +3,7 @@
 
 <head>
     <title>Home Page</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -11,23 +11,24 @@
     <script src="portfolio.js"></script>
 </head>
 
-<body onload="email()">
+<body onload="email()" class="container">
     <div class="head_n col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <img src="images/header.jpg" class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
         <nav>
             <ul class="nav">
-                <li class=" col-xs-1 col-xs-offset-1 col-sm-2 col-sm-offset-2 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2">Home</li>
-                <li class="col-xs-1 col-sm-2 col-md-2 col-lg-2">About</li>
-                <li class="col-xs-1 col-sm-2 col-md-2 col-lg-2">Skills</li>
-                <li class="col-xs-1 col-sm-2 col-md-2 col-lg-2">Contact</li>
-            </ul> 
+                <li class="home col-xs-1 col-sm-2 col-sm-offset-2 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2">Home</li>
+                <li class="skills col-xs-2 col-sm-2 col-md-2 col-lg-2">Resume</li>
+                <li class="about col-xs-1 col-sm-2 col-md-2 col-lg-2">About</li>
+                
+                <li class="contact col-xs-1 col-sm-2 col-md-2 col-lg-2">Contact</li>
+            </ul>
         </nav>
     </div>
     <div class="main_content col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <!-- Content Being replaced when button is clicked -->
     </div>
-    <div style="background-color: turquoise" class="footer_n col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        </span><a class="col-xs-12 col-md-4" href="https://www.facebook.com/mike.kidushim"><span class="fa fa-facebook-official">Facebook</a>
+    <div style="background-color: turquoise" class="footer_n col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+        <a class="col-xs-12 col-md-4" href="https://www.facebook.com/mike.kidushim">Facebook</a>
         <div class="col-md-4 col-xs-12"><span class="glyphicon glyphicon-envelope"><span id="email"> Email</span></div>
         <div class="phone col-md-2 col-md-offset-2 col-xs-12"><span class="glyphicon glyphicon-phone-alt"></span>Phone Number</div>
     </div>

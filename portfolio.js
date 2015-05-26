@@ -7,7 +7,9 @@ function email() {
     $('#email').text('E-mail' + ':' + ' ' + (email_name + server_name));
 
 }
-
+function show_r (){
+    $('').css
+}
 
 function Show() {
     if (clicked) {
@@ -19,3 +21,58 @@ function Show() {
         $('.new_title').toggleClass('title_hide');
     }
 }
+
+$(document).ready(function() {
+    $('body').on('click', '.home', function() {
+        console.log('Home btn works')
+        $.ajax({
+            url: 'home.html',
+            dataType: 'html',
+            cache: false,
+            success: function(response) {
+                console.log('success:', response)
+                $('.main_content').html(response)
+            }
+        });
+    })
+    $('body').on('click','.resume > span', function(){
+        console.log('hover')
+        $('.ss_img').toggleClass('show')
+    })
+    $('body').on('click', '.about', function() {
+        console.log('Home btn works')
+        $.ajax({
+            url: 'about.html',
+            dataType: 'html',
+            cache: false,
+            success: function(response) {
+                console.log('success:', response)
+                $('.main_content').html(response)
+            }
+        });
+    })
+    $('body').on('click', '.skills', function() {
+        console.log('Home btn works')
+        $.ajax({
+            url: 'skills.html',
+            dataType: 'html',
+            cache: false,
+            success: function(response) {
+                console.log('success:', response)
+                $('.main_content').html(response)
+            }
+        });
+    })
+    $('body').on('click', '.contact', function() {
+        console.log('Home btn works')
+        $.ajax({
+            url: 'contact.html',
+            dataType: 'html',
+            cache: false,
+            success: function(response) {
+                console.log('success:', response)
+                $('.main_content').html(response)
+            }
+        });
+    })
+});

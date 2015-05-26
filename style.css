@@ -4,15 +4,47 @@ html {
 
 .nav li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .head_n img {}
-
+span {
+    font-weight: bold;
+}
 .footer_n {
     padding-top: 20px;
     margin-top: 25px;
     height: 100px;
-    width: 95%;
+    width: 80%;
     margin-left: 30px;
+   /* position: relative;
+    left: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+*/}
+.roman > li a:hover {
+list-style: none;
+text-decoration: none;
+color: Green;
+}
+.roman > li a {
+	color: black;
+	font-weight: bold;
+}
+.roman > li {
+list-style: none;
+text-decoration: none;
+color: black;
+}
+.resume{
+	padding: 10px;
+}
+#btn2 {
+    margin-top: 10px;
+}
+.ss_img {
+    display: none;
+}
+.show {
+    display: inline-block;
 }
