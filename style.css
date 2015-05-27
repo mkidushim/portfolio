@@ -8,42 +8,55 @@ html {
 }
 
 .head_n img {}
+
 span {
     font-weight: bold;
 }
+
 .footer_n {
-    padding-top: 20px;
+    padding-top: 5px;
     margin-top: 25px;
-    height: 100px;
-    margin-left: 40px;
-   /* position: relative;
+    height: 80px;
+    /* position: relative;
     left: 20px;
     text-align: center;
     padding-bottom: 20px;
-*/}
+*/
+}
+a.fb {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
 .roman > li a:hover {
-list-style: none;
-text-decoration: none;
-color: Green;
+    list-style: none;
+    text-decoration: none;
+    color: Green;
 }
+
 .roman > li a {
-	color: black;
-	font-weight: bold;
+    color: black;
+    font-weight: bold;
 }
+
 .roman > li {
-list-style: none;
-text-decoration: none;
-color: black;
+    list-style: none;
+    text-decoration: none;
+    color: black;
 }
-.resume{
-	padding: 10px;
+
+.resume {
+    padding: 10px;
 }
+
 #btn2 {
     margin-top: 10px;
 }
+
 .ss_img {
     display: none;
 }
+
 .show {
     display: inline-block;
 }
