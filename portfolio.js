@@ -1,6 +1,7 @@
 var email_name = 'mkidushim';
 var server_name = '@gmail.com';
 var clicked = true;
+var ss_click = true;
 
 function email() {
     console.log(email_name + server_name)
@@ -9,7 +10,12 @@ function email() {
 }
 
 function show_r() {
-    $('').css
+    $('.roman > li img.calc').css({
+        'display': 'inline-block',
+        'width': '100px',
+        'height': '100px'
+    })
+
 }
 
 function Show() {
@@ -49,6 +55,10 @@ $(document).ready(function() {
         });
     })
     $('body').on('click', '.resume > span', function() {
+        console.log('hover')
+        $('.ss_img').toggleClass('show')
+    })
+     $('body').on('touchstart', '.resume > span', function() {
         console.log('hover')
         $('.ss_img').toggleClass('show')
     })
@@ -124,5 +134,12 @@ $(document).ready(function() {
             }
         });
     })
-
+    $('body').on('click', '.roman > li a', function() {
+        show_r();
+        console.log('github screen_shots')
+    })
+$('body').on('touchstart', '.roman > li a', function() {
+        show_r();
+        console.log('github screen_shots')
+    })
 });
