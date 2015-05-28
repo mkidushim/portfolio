@@ -2,6 +2,9 @@ var email_name = 'mkidushim';
 var server_name = '@gmail.com';
 var clicked = true;
 var ss_click = true;
+var calc_pressed = true;
+var tic_pressed = true;
+var memory_pressed = true;
 
 function email() {
     console.log(email_name + server_name)
@@ -9,8 +12,26 @@ function email() {
 
 }
 
-function show_r() {
+function show_calc() {
     $('.roman > li img.calc').css({
+        'display': 'inline-block',
+        'width': '100px',
+        'height': '100px'
+    })
+
+}
+
+function show_TTT() {
+    $('.roman > li img.tic-tac-toe').css({
+        'display': 'inline-block',
+        'width': '100px',
+        'height': '100px'
+    })
+
+}
+
+function show_memory() {
+    $('.roman > li img.memory_match').css({
         'display': 'inline-block',
         'width': '100px',
         'height': '100px'
@@ -58,7 +79,7 @@ $(document).ready(function() {
         console.log('hover')
         $('.ss_img').toggleClass('show')
     })
-     $('body').on('touchstart', '.resume > span', function() {
+    $('body').on('touchstart', '.resume > span', function() {
         console.log('hover')
         $('.ss_img').toggleClass('show')
     })
@@ -134,12 +155,78 @@ $(document).ready(function() {
             }
         });
     })
-    $('body').on('click', '.roman > li a', function() {
-        show_r();
-        console.log('github screen_shots')
+    $('body').on('click', '.calc_b', function() {
+        if (calc_pressed) {
+            show_calc();
+            console.log('github screen_shots')
+            calc_pressed = false;
+        } else {
+            $('.roman > li img.calc').css({
+                'display': 'none',
+            })
+            calc_pressed = true;
+        }
     })
-$('body').on('touchstart', '.roman > li a', function() {
-        show_r();
+    $('body').on('touchstart', '.calc_b', function() {
+        if (calc_pressed) {
+            show_calc();
+            console.log('github screen_shots')
+            calc_pressed = false;
+        } else {
+            $('.roman > li img.calc').css({
+                'display': 'none',
+            })
+            calc_pressed = true;
+        }
+    })
+    $('body').on('click', '.tic-tac-toe_b', function() {
+        if (tic_pressed) {
+            show_TTT();
+            console.log('github screen_shots')
+            tic_pressed = false;
+        } else {
+            $('.roman > li img.tic-tac-toe').css({
+                'display': 'none',
+            })
+            tic_pressed = true;
+        }
+    })
+    $('body').on('touchstart', '.tic-tac-toe_b', function() {
+        if (tic_pressed) {
+            show_TTT();
+            console.log('github screen_shots')
+            tic_pressed = false;
+        } else {
+            $('.roman > li img.tic-tac-toe').css({
+                'display': 'none',
+            })
+            tic_pressed = true;
+        }
+    })
+    $('body').on('click', '.memory_match_b', function() {
+        if (memory_pressed){
+        show_memory();
         console.log('github screen_shots')
+        memory_pressed = false;
+        }
+        else {
+            $('.roman > li img.memory_match').css({
+                'display': 'none',
+            })
+            memory_pressed = true;
+        }
+    })
+    $('body').on('touchstart', '.memory_match_b', function() {
+        if (memory_pressed){
+        show_memory();
+        console.log('github screen_shots')
+        memory_pressed = false;
+        }
+        else {
+            $('.roman > li img.memory_match').css({
+                'display': 'none',
+            })
+            memory_pressed = true;
+        }
     })
 });
