@@ -28,6 +28,10 @@ a.fb {
     font-weight: bold;
     color: black;
 }
+.roman > li img {
+    display:none;
+}
+
 .roman > li a:hover {
     list-style: none;
     text-decoration: none;
