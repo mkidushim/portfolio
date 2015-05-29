@@ -5,14 +5,31 @@ html {
     display: inline-block;
     margin-right: 25px;
 }
-span {
+.phone a, span#email {
     font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding-left: 12px; 
+}
+.header_img {
+width: 100%;
+top: 0px;
+left: 0px;
+height: 100px;
+
 }
 .footer_n {
     padding-top: 5px;
     margin-top: 25px;
-    height: 80px;
+    height: 65px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }
+/*div.col-xs-12 {
+   
+      height: 100px;
+}*/
 a.fb {
     text-decoration: none;
     font-weight: bold;
@@ -37,6 +54,7 @@ a.fb {
     list-style: none;
     text-decoration: none;
     color: black;
+    display: inline-block;
 }
 
 .resume {
@@ -52,5 +70,7 @@ a.fb {
 }
 
 .show {
-    display: inline-block;
+    display: block;
+    height: 100px;
+    margin-bottom: 10px;
 }

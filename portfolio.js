@@ -51,7 +51,7 @@ function Show() {
 }
 
 $(document).ready(function() {
-    $('body').on('click', '.home', function() {
+    $('body.container').on('click','.home', function() {
         console.log('Home btn works')
         $.ajax({
             url: 'home.html',
@@ -83,7 +83,7 @@ $(document).ready(function() {
         console.log('hover')
         $('.ss_img').toggleClass('show')
     })
-    $('body').on('click', '.about', function() {
+    $('.nav').on('click', '.about', function() {
         console.log('Home btn works')
         $.ajax({
             url: 'about.html',
