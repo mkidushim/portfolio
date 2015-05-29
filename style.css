@@ -1,27 +1,17 @@
 html {
     margin: 0px;
 }
-
 .nav li {
     display: inline-block;
     margin-right: 25px;
 }
-
-.head_n img {}
-
 span {
     font-weight: bold;
 }
-
 .footer_n {
     padding-top: 5px;
     margin-top: 25px;
     height: 80px;
-    /* position: relative;
-    left: 20px;
-    text-align: center;
-    padding-bottom: 20px;
-*/
 }
 a.fb {
     text-decoration: none;
