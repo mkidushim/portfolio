@@ -8,7 +8,7 @@ var memory_pressed = true;
 
 function email() {
     console.log(email_name + server_name)
-    $('#email').text('E-mail' + ':' + ' ' + (email_name + server_name));
+    $('#email').text(email_name + server_name);
 
 }
 
@@ -52,12 +52,14 @@ function Show() {
 
 $(document).ready(function() {
     $('body.container').on('click','.home', function() {
+        
         console.log('Home btn works')
         $.ajax({
             url: 'home.html',
             dataType: 'html',
             cache: false,
             success: function(response) {
+                $('#email').text(email_name + server_name);
                 console.log('success:', response)
                 $('.main_content').html(response)
             }
@@ -70,6 +72,7 @@ $(document).ready(function() {
             dataType: 'html',
             cache: false,
             success: function(response) {
+                email();
                 console.log('success:', response)
                 $('.main_content').html(response)
             }
