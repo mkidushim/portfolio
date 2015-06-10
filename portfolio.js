@@ -62,6 +62,7 @@ $(document).ready(function() {
                 $('#email').text(email_name + server_name);
                 console.log('success:', response)
                 $('.main_content').html(response)
+                email();
             }
         });
     })
@@ -75,6 +76,7 @@ $(document).ready(function() {
                 email();
                 console.log('success:', response)
                 $('.main_content').html(response)
+                email();
             }
         });
     })
