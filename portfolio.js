@@ -8,37 +8,38 @@ var memory_pressed = true;
 
 function email() {
     console.log(email_name + server_name)
-    $('#email').text('E-mail' + ':' + ' ' + (email_name + server_name));
+    $('#email').text(email_name + server_name);
 
 }
 
 function show_calc() {
-    $('.roman > li img.calc').css({
-        'display': 'inline-block',
-        'width': '100px',
-        'height': '100px'
-    })
+    $('.roman > li img.calc').toggleClass('show');
 
 }
 
 function show_TTT() {
-    $('.roman > li img.tic-tac-toe').css({
-        'display': 'inline-block',
-        'width': '100px',
-        'height': '100px'
-    })
+    $('.roman > li img.tic-tac-toe').toggleClass('show');
 
 }
 
 function show_memory() {
-    $('.roman > li img.memory_match').css({
-        'display': 'inline-block',
-        'width': '100px',
-        'height': '100px'
-    })
+    $('.roman > li img.memory_match').toggleClass('show');
 
 }
 
+function show_sweet() {
+    $('.roman > li img.sweet_corner').toggleClass('show');
+
+}
+function show_proto (){
+    $('.roman > li img.prototypes').toggleClass('show');
+}
+function show_SGT (){
+    $('.roman > li img.C4SGT').toggleClass('show');
+}
+function show_TDL (){
+    $('.roman > li img.C4TDL').toggleClass('show');
+}
 function Show() {
     if (clicked) {
         $('.screen_shots').removeClass('screen_shots').addClass('hidden');
@@ -51,15 +52,18 @@ function Show() {
 }
 
 $(document).ready(function() {
-    $('body.container').on('click','.home', function() {
+    $('body.row').on('click','.home', function() {
+        
         console.log('Home btn works')
         $.ajax({
             url: 'home.html',
             dataType: 'html',
             cache: false,
             success: function(response) {
+                $('#email').text(email_name + server_name);
                 console.log('success:', response)
                 $('.main_content').html(response)
+                email();
             }
         });
     })
@@ -70,8 +74,10 @@ $(document).ready(function() {
             dataType: 'html',
             cache: false,
             success: function(response) {
+                email();
                 console.log('success:', response)
                 $('.main_content').html(response)
+                email();
             }
         });
     })
@@ -155,78 +161,12 @@ $(document).ready(function() {
             }
         });
     })
-    $('body').on('click', '.calc_b', function() {
-        if (calc_pressed) {
-            show_calc();
-            console.log('github screen_shots')
-            calc_pressed = false;
-        } else {
-            $('.roman > li img.calc').css({
-                'display': 'none',
-            })
-            calc_pressed = true;
-        }
-    })
-    $('body').on('touchstart', '.calc_b', function() {
-        if (calc_pressed) {
-            show_calc();
-            console.log('github screen_shots')
-            calc_pressed = false;
-        } else {
-            $('.roman > li img.calc').css({
-                'display': 'none',
-            })
-            calc_pressed = true;
-        }
-    })
-    $('body').on('click', '.tic-tac-toe_b', function() {
-        if (tic_pressed) {
-            show_TTT();
-            console.log('github screen_shots')
-            tic_pressed = false;
-        } else {
-            $('.roman > li img.tic-tac-toe').css({
-                'display': 'none',
-            })
-            tic_pressed = true;
-        }
-    })
-    $('body').on('touchstart', '.tic-tac-toe_b', function() {
-        if (tic_pressed) {
-            show_TTT();
-            console.log('github screen_shots')
-            tic_pressed = false;
-        } else {
-            $('.roman > li img.tic-tac-toe').css({
-                'display': 'none',
-            })
-            tic_pressed = true;
-        }
-    })
-    $('body').on('click', '.memory_match_b', function() {
-        if (memory_pressed){
-        show_memory();
-        console.log('github screen_shots')
-        memory_pressed = false;
-        }
-        else {
-            $('.roman > li img.memory_match').css({
-                'display': 'none',
-            })
-            memory_pressed = true;
-        }
-    })
-    $('body').on('touchstart', '.memory_match_b', function() {
-        if (memory_pressed){
-        show_memory();
-        console.log('github screen_shots')
-        memory_pressed = false;
-        }
-        else {
-            $('.roman > li img.memory_match').css({
-                'display': 'none',
-            })
-            memory_pressed = true;
-        }
-    })
+    $('.calc_b').click(show_calc);
+    $('.tic-tac-toe_b').click(show_TTT);
+    $('.memory_match_b').click(show_memory);
+    $('.sweetcorner_b').click(show_sweet);
+    $('.prototypes_b').click(show_proto);
+    $('.C4SGT').click(show_SGT);
+    $('.C4TDL').click(show_TDL);
+
 });
