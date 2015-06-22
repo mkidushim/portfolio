@@ -36,6 +36,7 @@ span.glyphicon, i {
     list-style: none;
     text-decoration: none;
     color: Green;
+    background-color: orange;
 }
 
 .roman > li a {
@@ -49,7 +50,9 @@ span.glyphicon, i {
     color: black;
     display: inline-block;
 }
-
+.show:hover {
+    border: 2px solid orange;
+}
 .resume {
     padding: 10px;
 }
@@ -63,7 +66,8 @@ span.glyphicon, i {
 }
 
 .show {
-    display: block;
-    height: 100px;
-    margin-bottom: 10px;
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    
 }

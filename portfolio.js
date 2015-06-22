@@ -13,39 +13,32 @@ function email() {
 }
 
 function show_calc() {
-    $('.roman > li img.calc').css({
-        'display': 'inline-block',
-        'width': '100px',
-        'height': '100px'
-    })
+    $('.roman > li img.calc').toggleClass('show');
 
 }
 
 function show_TTT() {
-    $('.roman > li img.tic-tac-toe').css({
-        'display': 'inline-block',
-        'width': '100px',
-        'height': '100px'
-    })
+    $('.roman > li img.tic-tac-toe').toggleClass('show');
 
 }
 
 function show_memory() {
-    $('.roman > li img.memory_match').css({
-        'display': 'inline-block',
-        'width': '100px',
-        'height': '100px'
-    })
+    $('.roman > li img.memory_match').toggleClass('show');
 
 }
 
 function show_sweet() {
-    $('.roman > li img.sweet_corner').css({
-        'display': 'inline-block',
-        'width': '100px',
-        'height': '100px'
-    })
+    $('.roman > li img.sweet_corner').toggleClass('show');
 
+}
+function show_proto (){
+    $('.roman > li img.prototypes').toggleClass('show');
+}
+function show_SGT (){
+    $('.roman > li img.C4SGT').toggleClass('show');
+}
+function show_TDL (){
+    $('.roman > li img.C4TDL').toggleClass('show');
 }
 function Show() {
     if (clicked) {
@@ -172,105 +165,8 @@ $(document).ready(function() {
     $('.tic-tac-toe_b').click(show_TTT);
     $('.memory_match_b').click(show_memory);
     $('.sweetcorner_b').click(show_sweet);
+    $('.prototypes_b').click(show_proto);
+    $('.C4SGT').click(show_SGT);
+    $('.C4TDL').click(show_TDL);
 
-                    // $('body').on('click', '.calc_b', function() {
-                    //     if (calc_pressed) {
-                    //         show_calc();
-                    //         console.log('github screen_shots')
-                    //         calc_pressed = false;
-                    //     } else {
-                    //         $('.roman > li img.calc').css({
-                    //             'display': 'none',
-                    //         })
-                    //         calc_pressed = true;
-                    //     }
-                    // })
-                    // $('body').on('touchstart', '.calc_b', function() {
-                    //     if (calc_pressed) {
-                    //         show_calc();
-                    //         console.log('github screen_shots')
-                    //         calc_pressed = false;
-                    //     } else {
-                    //         $('.roman > li img.calc').css({
-                    //             'display': 'none',
-                    //         })
-                    //         calc_pressed = true;
-                    //     }
-                    // })
-                    // $('body').on('click', '.tic-tac-toe_b', function() {
-                    //     if (tic_pressed) {
-                    //         show_TTT();
-                    //         console.log('github screen_shots')
-                    //         tic_pressed = false;
-                    //     } else {
-                    //         $('.roman > li img.tic-tac-toe').css({
-                    //             'display': 'none',
-                    //         })
-                    //         tic_pressed = true;
-                    //     }
-                    // })
-                    // $('body').on('touchstart', '.tic-tac-toe_b', function() {
-                    //     if (tic_pressed) {
-                    //         show_TTT();
-                    //         console.log('github screen_shots')
-                    //         tic_pressed = false;
-                    //     } else {
-                    //         $('.roman > li img.tic-tac-toe').css({
-                    //             'display': 'none',
-                    //         })
-                    //         tic_pressed = true;
-                    //     }
-                    // })
-                    // $('body').on('click', '.memory_match_b', function() {
-                    //     if (memory_pressed){
-                    //     show_memory();
-                    //     console.log('github screen_shots')
-                    //     memory_pressed = false;
-                    //     }
-                    //     else {
-                    //         $('.roman > li img.memory_match').css({
-                    //             'display': 'none',
-                    //         })
-                    //         memory_pressed = true;
-                    //     }
-                    // })
-                    // $('body').on('touchstart', '.memory_match_b', function() {
-                    //     if (memory_pressed){
-                    //     show_memory();
-                    //     console.log('github screen_shots')
-                    //     memory_pressed = false;
-                    //     }
-                    //     else {
-                    //         $('.roman > li img.memory_match').css({
-                    //             'display': 'none',
-                    //         })
-                    //         memory_pressed = true;
-                    //     }
-                    // })
-                    // $('body').on('click', '.sweetcorner_b', function() {
-                    //     if (memory_pressed){
-                    //     show_memory();
-                    //     console.log('github screen_shots')
-                    //     memory_pressed = false;
-                    //     }
-                    //     else {
-                    //         $('.roman > li img.memory_match').css({
-                    //             'display': 'none',
-                    //         })
-                    //         memory_pressed = true;
-                    //     }
-                    // })
-                    // $('body').on('touchstart', '.sweetcorner_b', function() {
-                    //     if (memory_pressed){
-                    //     show_memory();
-                    //     console.log('github screen_shots')
-                    //     memory_pressed = false;
-                    //     }
-                    //     else {
-                    //         $('.roman > li img.memory_match').css({
-                    //             'display': 'none',
-                    //         })
-                    //         memory_pressed = true;
-                    //     }
-                    // })
 });
