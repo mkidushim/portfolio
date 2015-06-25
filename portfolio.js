@@ -112,7 +112,6 @@ $(document).ready(function() {
             dataType: 'html',
             cache: false,
             success: function(response) {
-                email();
                 console.log('success:', response)
                 $('.main_content').html(response)
                 email();
