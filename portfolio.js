@@ -5,7 +5,34 @@ var ss_click = true;
 var calc_pressed = true;
 var tic_pressed = true;
 var memory_pressed = true;
-
+function send_confirm (){
+    $.ajax({
+        url: 'mail_withmailer.php',
+        data: {
+            name: $('#name').val(),
+            email: $('#email').val(),
+            phone: $('#phone').val(),
+            message: $('#message').val()
+        },
+        method: 'POST',
+        dataType: 'JSON',
+        success: function(response) {
+            console.log(response);
+            $("#dialog-message").dialog({
+                    modal: true,
+                    draggable: false,
+                    resizable: false,
+                    position: ['center', 'top'],
+                    width: 400,
+                    title: "Congratulations!",
+                    open: function(){
+                        $(this).html("Email Sent")
+                    },
+                    dialogClass: 'ui-dialog-osx',
+                });
+        }
+    });
+}
 function email() {
     console.log(email_name + server_name)
     $('#email').text(email_name + server_name);
@@ -31,15 +58,19 @@ function show_sweet() {
     $('.roman > li img.sweet_corner').toggleClass('show');
 
 }
-function show_proto (){
+
+function show_proto() {
     $('.roman > li img.prototypes').toggleClass('show');
 }
-function show_SGT (){
+
+function show_SGT() {
     $('.roman > li img.C4SGT').toggleClass('show');
 }
-function show_TDL (){
+
+function show_TDL() {
     $('.roman > li img.C4TDL').toggleClass('show');
 }
+
 function Show() {
     if (clicked) {
         $('.screen_shots').removeClass('screen_shots').addClass('hidden');
@@ -52,8 +83,8 @@ function Show() {
 }
 
 $(document).ready(function() {
-    $('body').on('click','.home', function() {
-        
+    $('body').on('click', '.home', function() {
+
         console.log('Home btn works')
         $.ajax({
             url: 'home.html',
@@ -64,13 +95,13 @@ $(document).ready(function() {
                 console.log('success:', response)
                 $('.main_content').html(response)
                 email();
-                 $('.calc_b').click(show_calc);
-    $('.tic-tac-toe_b').click(show_TTT);
-    $('.memory_match_b').click(show_memory);
-    $('.sweetcorner_b').click(show_sweet);
-    $('.prototypes_b').click(show_proto);
-    $('.C4SGT').click(show_SGT);
-    $('.C4TDL').click(show_TDL);
+                $('.calc_b').click(show_calc);
+                $('.tic-tac-toe_b').click(show_TTT);
+                $('.memory_match_b').click(show_memory);
+                $('.sweetcorner_b').click(show_sweet);
+                $('.prototypes_b').click(show_proto);
+                $('.C4SGT').click(show_SGT);
+                $('.C4TDL').click(show_TDL);
             }
         });
     })
@@ -151,8 +182,12 @@ $(document).ready(function() {
             dataType: 'html',
             cache: false,
             success: function(response) {
+
                 console.log('success:', response)
                 $('.main_content').html(response)
+                $('body').on('click','#btn2',function (){
+                    send_confirm();
+                });
             }
         });
     })
@@ -175,6 +210,7 @@ $(document).ready(function() {
     $('.prototypes_b').click(show_proto);
     $('.C4SGT').click(show_SGT);
     $('.C4TDL').click(show_TDL);
+
     // $('.calc_b').touchstart(show_calc);
     // $('.tic-tac-toe_b').touchstart(show_TTT);
     // $('.memory_match_b').touchstart(show_memory);
