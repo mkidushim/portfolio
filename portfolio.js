@@ -52,7 +52,7 @@ function Show() {
 }
 
 $(document).ready(function() {
-    $('body.row').on('click','.home', function() {
+    $('body').on('click','.home', function() {
         
         console.log('Home btn works')
         $.ajax({
@@ -64,6 +64,13 @@ $(document).ready(function() {
                 console.log('success:', response)
                 $('.main_content').html(response)
                 email();
+                 $('.calc_b').click(show_calc);
+    $('.tic-tac-toe_b').click(show_TTT);
+    $('.memory_match_b').click(show_memory);
+    $('.sweetcorner_b').click(show_sweet);
+    $('.prototypes_b').click(show_proto);
+    $('.C4SGT').click(show_SGT);
+    $('.C4TDL').click(show_TDL);
             }
         });
     })
@@ -168,5 +175,11 @@ $(document).ready(function() {
     $('.prototypes_b').click(show_proto);
     $('.C4SGT').click(show_SGT);
     $('.C4TDL').click(show_TDL);
-
+    // $('.calc_b').touchstart(show_calc);
+    // $('.tic-tac-toe_b').touchstart(show_TTT);
+    // $('.memory_match_b').touchstart(show_memory);
+    // $('.sweetcorner_b').touchstart(show_sweet);
+    // $('.prototypes_b').touchstart(show_proto);
+    // $('.C4SGT').touchstart(show_SGT);
+    // $('.C4TDL').touchstart(show_TDL);
 });
