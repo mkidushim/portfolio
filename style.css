@@ -84,3 +84,15 @@ span.glyphicon, i {
     left: 45px;
     background-color: #6CF;
 }
+a.final{
+    position: relative;
+    left: 65px;
+    color: black;
+    text-decoration: none;
+
+}
+a.final:hover{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
