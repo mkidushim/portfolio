@@ -209,8 +209,8 @@ $(document).ready(function() {
     $('.prototypes_b').click(show_proto);
     $('.C4SGT').click(show_SGT);
     $('.C4TDL').click(show_TDL);
-
-    // $('.calc_b').touchstart(show_calc);
+    
+  
     // $('.tic-tac-toe_b').touchstart(show_TTT);
     // $('.memory_match_b').touchstart(show_memory);
     // $('.sweetcorner_b').touchstart(show_sweet);

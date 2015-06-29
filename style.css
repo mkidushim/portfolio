@@ -32,16 +32,18 @@ span.glyphicon, i {
     display:none;
 }
 
-.roman > li a:hover {
+.roman > li p:hover {
     list-style: none;
     text-decoration: none;
     color: Green;
     background-color: orange;
+
 }
 
-.roman > li a {
+.roman > li p {
     color: black;
     font-weight: bold;
+     padding: 5px;
 }
 
 .roman > li {
@@ -86,9 +88,10 @@ span.glyphicon, i {
 }
 a.final{
     position: relative;
-    left: 65px;
+    left: 25px;
     color: black;
     text-decoration: none;
+    padding:10px;
   
 
 }
