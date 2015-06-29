@@ -71,3 +71,28 @@ span.glyphicon, i {
     width: 75px;
     
 }
+.iconbar1{
+    background-color: purple;
+}
+.iconbar2{
+    background-color: green;
+}
+.iconbar3{
+    background-color: blue;
+}
+.drop_menu > button {
+    left: 45px;
+    background-color: #6CF;
+}
+a.final{
+    position: relative;
+    left: 65px;
+    color: black;
+    text-decoration: none;
+
+}
+a.final:hover{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
