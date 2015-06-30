@@ -122,10 +122,10 @@ $(document).ready(function() {
         console.log('hover')
         $('.ss_img').toggleClass('show')
     })
-    $('body').on('touchstart', '.resume > span', function() {
-        console.log('hover')
-        $('.ss_img').toggleClass('show')
-    })
+    // $('body').on('touchstart', '.resume > span', function() {
+    //     console.log('hover')
+    //     $('.ss_img').toggleClass('show')
+    // })
     $('.nav').on('click', '.about', function() {
         console.log('Home btn works')
         $.ajax({
