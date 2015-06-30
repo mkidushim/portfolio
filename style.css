@@ -4,32 +4,33 @@ html {
 
 .nav li {
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 0px;
 }
-.phone a, span#email {
+
+.phone a,
+span#email {
     font-weight: bold;
     text-decoration: none;
     color: black;
-    padding-left: 12px; 
+    padding-left: 12px;
     position: relative;
-  z-index: 1;
-  
-}
-.phone a{
-    position: relative;
-  top: 100px;
-}
-span.glyphicon, i {
-    position: relative;
-  z-index: 1;
-  top: 100px;
+    z-index: 1;
 }
 
+.phone a {
+    position: relative;
+    top: 100px;
+}
 
-
+span.glyphicon,
+i {
+    position: relative;
+    z-index: 1;
+    top: 100px;
+}
 
 .roman > li img {
-    display:none;
+    display: none;
 }
 
 .roman > li p:hover {
@@ -37,13 +38,12 @@ span.glyphicon, i {
     text-decoration: none;
     color: Green;
     background-color: orange;
-
 }
 
 .roman > li p {
     color: black;
     font-weight: bold;
-     padding: 5px;
+    padding: 5px;
 }
 
 .roman > li {
@@ -52,9 +52,11 @@ span.glyphicon, i {
     color: black;
     display: inline-block;
 }
+
 .show:hover {
     border: 2px solid orange;
 }
+
 .resume {
     padding: 10px;
 }
@@ -71,31 +73,46 @@ span.glyphicon, i {
     display: inline-block;
     height: 75px;
     width: 75px;
+}
+
+button.navbar-toggle {
+    width: 55px;
+}
+
+.row.visible-xs > nav {
+    left: 10px;
+}
+.row.hidden-xs {
+    left: 32px;
     
 }
-.iconbar1{
+.iconbar1 {
     background-color: purple;
 }
-.iconbar2{
+
+.iconbar2 {
     background-color: green;
 }
-.iconbar3{
+
+.iconbar3 {
     background-color: blue;
 }
+
 .drop_menu > button {
     left: 45px;
     background-color: #6CF;
 }
-a.final{
+
+a.final {
     position: relative;
     left: 25px;
     color: black;
     text-decoration: none;
-    padding:10px;
-  
-
+    padding: 10px;
+    right: 5px;
 }
-a.final:hover{
+
+a.final:hover {
     text-decoration: none;
     color: white;
     background-color: black;
