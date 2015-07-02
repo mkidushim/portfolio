@@ -94,7 +94,6 @@ $(document).ready(function() {
                 $('#email').text(email_name + server_name);
                 console.log('success:', response)
                 $('.main_content').html(response)
-                email();
                 $('.calc_b').click(show_calc);
                 $('.tic-tac-toe_b').click(show_TTT);
                 $('.memory_match_b').click(show_memory);
