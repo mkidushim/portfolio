@@ -14,8 +14,8 @@
     <script src="portfolio.js"></script>
 </head>
 
-<body onload="email()" class="">
-    <div>
+<body onload="email()" >
+    <div id="wrapper">
         <!--
         <div class="row">
              <div class="head_img col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -26,9 +26,9 @@
                     <a class='col-xs-3 icon-bar contact'>Contact</a>
                 </div>
                 -->
-        <header class="header col-sm-12">
+        <header id='header' class="header col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="row">
-                <img class="col-sm-12 col-xs-12" src="images/header.jpg">
+               <!-- <img class="col-sm-12 col-xs-12" src="images/header.jpg">-->
                 <div class="drop_menu navbar-toggle-con col-xs-2 visible-xs">
                     <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
                         <span class="icon-bar iconbar1"></span>
@@ -56,7 +56,7 @@
                 </div>
             </div>
         </header>
-        <div class="main_content col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="content" class="main_content col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h3 class="text-center">Michael Kidushim's Portfolio</h3>
             <p class="info4 col-xs-12 col-md-4 col-md-offset-4 text-center">I recently finished a 12 week web developement bootcamp to helped prepare me to pursue a career in web developement by teaching us in a work oriented environment. If you wish to contact me the best way to do so is by email or linkedin, my email address is<span id="email"></span> and you can get to my LinkedIn account by clicking here <span class="fa fa-linkedin"><a target="_blank" class="link" href="https://www.linkedin.com/in/mkidushim">Mkidushim.</a></span> Also Check out my github if you are interested in looking at my code <a class="link" target="_blank" href="https://github.com/mkidushim">mkidushim</a></p>
             <p class="text-center col-md-4 col-md-offset-4"> Listed below are some projects I have been working on click on each title to show a screen shot that links to a working version of that project except prototypes directs you to my github repo:</p>
@@ -99,14 +99,16 @@
                 <img class="col-xs-7 col-xs-offset-5 col-md-3 col-md-offset-3" src="images/buster.jpg" alt="buster">
             </div>-->
         </div>
-        <!-- Content Being replaced when button is clicked -->
-        <img src="images/footer_water.jpg" class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
-        <!--<div class="footer_n col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+        <div id="footer" class="hidden-xs col-sm-12 col-md-12 col-lg-12">        <!-- Content Being replaced when button is clicked -->
+        
+        <!--<div class="footer_n col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center"><img src="images/footer_water.jpg" class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
         <div class="col-md-5 col-xs-7 col-xs-offset-2"><span class="glyphicon glyphicon-envelope"><span id="email"> Email</span></div>
         <div style="font-weight:bold" class="phone col-md-5 col-md-offset-2 col-xs-7 col-xs-offset-2"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/mkidushim">Mkidushim</a></div>
        
+
     </div>
     -->
+    </div>
 </body>
 
 </html>
