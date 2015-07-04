@@ -5,34 +5,7 @@ var ss_click = true;
 var calc_pressed = true;
 var tic_pressed = true;
 var memory_pressed = true;
-function send_confirm (){
-    $.ajax({
-        url: 'mail_withmailer.php',
-        data: {
-            name: $('#name').val(),
-            email: $('#email').val(),
-            phone: $('#phone').val(),
-            message: $('#message').val()
-        },
-        method: 'POST',
-        dataType: 'JSON',
-        success: function(response) {
-            console.log(response);
-            $("#dialog-message").dialog({
-                    modal: true,
-                    draggable: false,
-                    resizable: false,
-                    position: ['center', 'top'],
-                    width: 400,
-                    title: "Congratulations!",
-                    open: function(){
-                        $(this).html("Email Sent")
-                    },
-                    dialogClass: 'ui-dialog-osx',
-                });
-        }
-    });
-}
+
 function email() {
     console.log(email_name + server_name)
     $('#email').text(email_name + server_name);
@@ -83,6 +56,7 @@ function Show() {
 }
 
 $(document).ready(function() {
+    
     $('body').on('click', '.home', function() {
 
         console.log('Home btn works')
