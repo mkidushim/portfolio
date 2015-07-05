@@ -56,16 +56,16 @@ function Show() {
 }
 
 $(document).ready(function() {
-    
+    email();
     $('body').on('click', '.home', function() {
-
+        email();
         console.log('Home btn works')
         $.ajax({
             url: 'home.html',
             dataType: 'html',
             cache: false,
             success: function(response) {
-                $('#email').text(email_name + server_name);
+                
                 console.log('success:', response)
                 $('.main_content').html(response)
                 $('.calc_b').click(show_calc);

@@ -10,7 +10,9 @@ body {
     min-height: 100%;
     position: relative;
 }
-
+.main_content {
+    padding-bottom: 20px;
+}
 #header {
     background-image: url("images/header.jpg");
     background-repeat: no-repeat;
