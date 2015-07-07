@@ -61,6 +61,7 @@ span#email {
     text-decoration: none;
     color: Green;
     background-color: orange;
+    cursor: pointer;
 }
 
 .roman > li p {
