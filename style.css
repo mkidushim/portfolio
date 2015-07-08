@@ -143,6 +143,7 @@ a#link3 {
 
 a.link.ui-link {
     color: black;
+    left: 5px;
 }
 
 #link {
