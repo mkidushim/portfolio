@@ -5,7 +5,12 @@ body {
     height: 100%;
     font-family: Times;
 }
-
+small {
+    text-align: center;
+}
+#m_GTL {
+    right:3px;
+}
 #wrapper {
     min-height: 100%;
     position: relative;
@@ -89,10 +94,16 @@ span#email {
     margin-top: 10px;
 }
 
-.ss_img {
-    display: none;
+.ss_resume{
+    width: 45%;
+    -webkit-transform:translateX(61%);
+    -moz-transform:translateX(50%);
+    -ms-transform:translateX(50%); 
+    -o-transform:translateX(50%);  
 }
-
+.resume_info {
+    text-align: center;
+}
 .show {
     display: inline-block;
     height: 100px;
@@ -178,9 +189,14 @@ a.final:hover {
 .resume > span:hover {
     background-color: black;
     padding: 10px;
-    font-weight: bold;
+    font-weight: 300;
     color: white;
     border-radius: 10px;
 }
-
+input[type="submit"] {
+    border-radius: 10px;
+    background-color: #0099CC;
+    text-shadow: rgb(243, 243, 243) 0px 1px 0px;
+    font-weight: bold;
+}
 
