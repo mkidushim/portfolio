@@ -41,18 +41,22 @@
                 <a href="#services" onclick=$ ( "#menu-close").click();>Skills</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$ ( "#menu-close").click();>My Work</a>
+                <a href="#final" onclick=$ ( "#menu-close").click();>Final Project</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$ ( "#menu-close").click();> Projects</a>
             </li>
             <li>
                 <a href="#contact" onclick=$ ( "#menu-close").click();>Contact</a>
             </li>
+             
         </ul>
     </nav>
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1>Michael Kidushim</h1>
-            <h3>Lamp Stack Developer</h3>
+            <h3>Full Stack Web Developer</h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
         </div>
@@ -143,7 +147,7 @@
         <!-- /.container -->
     </section>
     <!-- Callout -->
-    <aside class="callout">
+    <aside id="final" class="callout">
         <div class="text-vertical-center">
             <h1><a href="http://52.26.217.22/c4_final_project/">Final Project</a></h1>
         </div>
@@ -209,12 +213,12 @@
         <!-- /.container -->
     </section>
     <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
+    <aside id="contact" class="call-to-action bg-primary">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>Send Me Your Contact Information</h3>
-                    <form>
+                    <h3>Contact Information</h3>
+                    <form action="mail_withmailer.php" method="POST">
                         <label class="col-md-2 col-md-offset-3">Name:</label>
                         <input class="col-md-4" type="text" placeholder="name" name="name" required>
                          <label class="col-md-2 col-md-offset-3">E-mail:</label>
