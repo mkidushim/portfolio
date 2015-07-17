@@ -1,107 +1,291 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Home Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Stylish Portfolio - Michael Kidushim Theme</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="portfolio.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="stylish-portfolio.css">
 </head>
 
 <body>
-    <div id="wrapper">
-        <header id='header' class="header col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$ ( "#menu-close").click();>Michael Kidushim</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$ ( "#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$ ( "#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#services" onclick=$ ( "#menu-close").click();>Skills</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$ ( "#menu-close").click();>My Work</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$ ( "#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Michael Kidushim</h1>
+            <h3>Lamp Stack Developer</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
             <div class="row">
-                <div class="drop_menu navbar-toggle-con col-xs-2 visible-xs">
-                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                        <span class="icon-bar iconbar1"></span>
-                        <span class="icon-bar iconbar2"></span>
-                        <span class="icon-bar iconbar3"></span>
-                    </button>
-                </div>
-                <div class="row visible-xs visible-sm">
-                    <nav class="navbar-collapse bs-navbar-collapse collapse col-xs-12">
-                        <ul class="phone_nav nav navbar-nav ">
-                            <li class="active home"><a class="home">Home</a></li>
-                            <li><a class="about">About</a></li>
-                            <li><a class="skills">Skills</a></li>
-                            <li><a class="contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="row hidden-xs hidden-sm col-md-6 col-md-offset-4 col-lg-6 col-lg-offset-4">
-                    <ul class='nav navbar-nav navbar-collapse'>
-                        <li class="active home"><a class="home">Home</a></li>
-                        <li><a class="about">About</a></li>
-                        <li><a class="skills">Skills</a></li>
-                        <li><a class="contact">Contact</a></li>
-                    </ul>
+                <div class="col-lg-12 text-center">
+                    <h2>I recently finished a 12 week web developement bootcamp to help prepare me to pursue a career in web developement by learning in a fast paced environment modeled after the agile development system. If you wish to contact me the best way to do so is by going to the contact page and submitting a form with your name email and reason for contacting me. You can also check out my linkedIn or github accounts by clicking on the following links.</h2>
+                    <p class="lead">
+                        <SPAN class="fa fa-linkedin"></SPAN><a target="_blank" href="https://www.linkedin.com/in/mkidushim">mkidushim</a>
+                        <SPAN class="fa fa-github"></SPAN><a target="_blank" href="https://www.linkedin.com/in/mkidushim">mkidushim</a></p>
                 </div>
             </div>
-        </header>
-        <div id="content" class="main_content col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h3 class="text-center">Michael Kidushim's Portfolio</h3>
-            <p class="info4 col-xs-12 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 text-center">I recently finished a 12 week web developement bootcamp to help prepare me to pursue a career in web developement by learning in a fast paced environment modeled after the agile development system. If you wish to contact me the best way to do so is by going to the contact page and submitting a form with your name email and reason for contacting me. You can also check out my linkedIn account by clicking on the following link. </p>
-            <p class="col-xs-11 col-md-5 col-md-offset-5"><a class="link col-sm-4 col-sm-offset-6 col-md-4 col-md-offset-1 col-xs-7 col-xs-offset-4" target="_blank" href="https://www.linkedin.com/in/mkidushim">mkidushim</a></p>
-            <p class="text-center col-xs-12 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4"> Listed below are a few projects I have been working on. Click on each title to reveal screen shots that link to live versions of that particular project. The Prototypes link will take you directly to its GitHub repository. If you are interested in looking at the code for any of the projects listed below, it can be found on my GitHub account just visit the Skills page and click on the GitHub link.</p>
-            <ol class="roman col-xs-12 col-md-12 col-lg-12 text-center">
-                <li>
-                    <p class="C4TDL">Crash Test Dummies Hackathon To do List</p>
-                </li>
-                <li>
-                    <a target="_blank" href="http://52.26.217.22/c4_TDL/"><img class="screen_shot C4TDL" src="images/TDL.png"></a>
-                </li>
-                <li>
-                    <p class="tic-tac-toe_b">Tic-Tac-Toe</p>
-                </li>
-                <li>
-                    <a target="_blank" href="http://mkidushim.github.io/tic-tac-toe/"><img class="screen_shot tic-tac-toe" src="images/tic-tac-toe.png"></a>
-                </li>
-                <li>
-                    <p class="memory_match_b">Memory Game </p>
-                </li>
-                <li>
-                    <a target="_blank" href="http://mkidushim.github.io/memory_match_c4/"><img class="screen_shot memory_match" src="images/memory_match.png"></a>
-                </li>
-                <li>
-                    <p class="calc_b">Calculator </p>
-                </li>
-                <li>
-                    <a target="_blank" href="http://mkidushim.github.io/calculator/"><img class="screen_shot calc" src="images/calc.png"></a>
-                </li>
-                <li>
-                    <p class="prototypes_b">Prototypes</p>
-                </li>
-                <li>
-                    <a target="_blank" href="https://github.com/mkidushim/prototypes"><img class="screen_shot prototypes" src="images/prototypes.png"></a>
-                </li>
-                <li>
-                    <p class="sweetcorner_b">Sweet-Corner</p>
-                </li>
-                <li>
-                    <a target="_blank" href="http://52.26.217.22/public_sweet-corner/"><img class="screen_shot sweet_corner" src="images/sweet-corner.png"></a>
-                </li>
-                <li>
-                    <p class="C4SGT">Student Grade Table</p>
-                </li>
-                <li>
-                    <a target="_blank" href="http://52.26.217.22/public_c4_SGT/"><img class="screen_shot C4SGT" src="images/SGT.png"></a>
-                </li>
-            </ol>
-            <p class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-2 col-lg-offset-5 text-center">Below is a link to my final project for learningfuze's 12 week full immersion web development bootcamp:</p>
-            <p class="col-xs-11 col-md-5 col-md-offset-5 col-lg-2 col-lg-offset-5">
-                <a id="m_GTL" class="final hidden-xs hidden-sm col-md-7 col-md-offset-1 col-lg-8 col-lg-offset-3" target="_blank" href="http://52.26.217.22/c4_final_project/">Go to Lunch</a>
-                <a id="m_GTL" class="final col-xs-7 col-xs-offset-4 col-sm-4 col-sm-offset-6 hidden-md hidden-lg" target="_blank" href="http://52.26.217.22/c4_final_project/">Go to Lunch</a>
-            </p>
+            <!-- /.row -->
         </div>
-        <div id="footer" class="hidden-xs hidden-sm col-md-12 col-lg-12">
+        <!-- /.container -->
+    </section>
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>My Skills</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-html5 fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>HTML5, Javascript and jQuery</strong>
+                                </h4>
+                                <p>I have used html, javascript with jQuery and AJAX to build different types of web applications from a calculator to a memory match game and even a to do list application.</p>
+                                <a href="#portfolio" class="btn btn-light">View Projects</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Amazon Web Services</strong>
+                                </h4>
+                                <p>I utilitized AWS to install ubuntu which I used to store my projects. It gave me the ability to share my projects with others while not having to purchase a domain name while giving me a chance to learn more about the terminal and command lines. </p>
+                                <a href="#portfolio" class="btn btn-light">View Projects</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-css3 fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>CSS3 and Bootstrap</strong>
+                                </h4>
+                                <p>I have used CSS and Bootstrap to style things like a simple online cookie store, cupcake store, memory match game and even a tic-tac-toe boardgame. </p>
+                                <a href="#portfolio" class="btn btn-light">View Projects</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github-alt fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Git Version Control</strong>
+                                </h4>
+                                <p>The Web Development Bootcamp I recently completed centerd around git version control and a project oriented curriculum.  This helped to establish a solid understanding of bash and how to utilize issues and pull requests to complete a project.  </p>
+                                <a href="#portfolio" class="btn btn-light">View Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
         </div>
+        <!-- /.container -->
+    </section>
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1><a href="http://52.26.217.22/c4_final_project/">Final Project</a></h1>
+        </div>
+    </aside>
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>My Projects</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a target="_blank" href="http://52.26.217.22/c4_TDL/">
+                                    <img class="img-portfolio img-responsive" src="images/TDL.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a target="_blank" href="http://52.26.217.22/public_memory_match/">
+                                    <img class="img-portfolio img-responsive" src="images/memory_match.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a target="_blank" href="http://52.26.217.22/public_sweet-corner/">
+                                    <img class="img-portfolio img-responsive" src="images/sweet-corner.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a target="_blank" href="http://52.26.217.22/public_c4_SGT/">
+                                    <img class="img-portfolio img-responsive" src="images/SGT.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                            <a target="_blank" href="http://52.26.217.22/public_tic-tac-toe/">
+                                <img class="img-portfolio img-responsive" src="images/tic-tac-toe.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                            <a target="_blank" href="http://52.26.217.22/public_mboutique/">
+                                <img class="img-portfolio img-responsive" src="images/mboutique.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Send Me Your Contact Information</h3>
+                    <form>
+                        <label class="col-md-2 col-md-offset-3">Name:</label>
+                        <input class="col-md-4" type="text" placeholder="name" name="name" required>
+                         <label class="col-md-2 col-md-offset-3">E-mail:</label>
+                        <input class="col-md-4" type="email" placeholder="email" name="email" required>
+                         <label class="col-md-2 col-md-offset-3">Phone:</label>
+                        <input class="col-md-4" type="phone" placeholder="phone number" name="phone" required>
+                         <label class="col-md-2 col-md-offset-3">Message:</label>
+                        <input class="col-md-4" type="textarea" placeholder="Message" name="message" required>
+                        <button class="send col-md-2 col-md-offset-7" >Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Michael Kidushim</strong>
+                    </h4>
+                    
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/mike.kidushim"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/miketkidushim"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a target="_blnk" href="https://www.linkedin.com/in/mkidushim"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
 </body>
 
 </html>
