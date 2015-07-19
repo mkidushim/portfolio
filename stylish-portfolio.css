@@ -271,7 +271,9 @@ hr.small {
 .map {
     height: 500px;
 }
-
+.resume {
+    border-radius: 5px;
+}
 @media(max-width:768px) {
     .map {
         height: 75%;
